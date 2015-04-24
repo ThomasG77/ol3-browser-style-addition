@@ -1,0 +1,20 @@
+{
+  "name": "test-ol3-new-parameters",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thomas Gratier",
+  "license": "MIT",
+  "dependencies": {
+    "openlayers": "^3.4.0"
+  },
+  "style": "main.css",
+  "devDependencies": {
+    "browserify": "^9.0.8",
+    "parcelify": "^1.1.0",
+    "watchify": "^3.1.2"
+  }
+}

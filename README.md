@@ -27,26 +27,26 @@ You will generate a file in js/bundle.js and css/bundle.css and will now be able
 
 What you have to see is the fact that package.json at the project your are using look this way
 
-{
-  "name": "test-ol3-new-parameters",
-  "version": "1.0.0",
-  "description": "",
-  "main": "",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Thomas Gratier",
-  "license": "MIT",
-  "dependencies": {
-    "openlayers": "^3.4.0"
-  },
-  "style": "main.css",
-  "devDependencies": {
-    "browserify": "^9.0.8",
-    "parcelify": "^1.1.0",
-    "watchify": "^3.1.2"
-  }
-}
+    {
+      "name": "test-ol3-new-parameters",
+      "version": "1.0.0",
+      "description": "",
+      "main": "",
+      "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "author": "Thomas Gratier",
+      "license": "MIT",
+      "dependencies": {
+        "openlayers": "^3.4.0"
+      },
+      "style": "main.css",
+      "devDependencies": {
+        "browserify": "^9.0.8",
+        "parcelify": "^1.1.0",
+        "watchify": "^3.1.2"
+      }
+    }
 
 I volontary use `style` and you will see that `parcelify` already guessed well that ol.css should be retrieve from "css/ol.css" relatively to node_modules/openlayers/ directory and then add content from main.css.
 

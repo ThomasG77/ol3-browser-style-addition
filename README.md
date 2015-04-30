@@ -12,9 +12,7 @@ Then, edit the file node_modules/openlayers/package.json and to simulate if PR w
 
 the following (PS: I encounter an issue with the path in PR and I've updated my PR accordindly)
 
-    "browser": {
-      "openlayers": "dist/ol.js"
-    },
+    "browser": "dist/ol.js",
     "style": [
       "css/ol.css"
     ],
@@ -50,7 +48,7 @@ What you have to see is the fact that package.json at the project your are using
 
 I volontary use `style` and you will see that `parcelify` already guessed well that ol.css should be retrieve from "css/ol.css" relatively to node_modules/openlayers/ directory and then add content from main.css.
 
-You have a css dependency tool for free.
+You have a css dependency tool for free depending on js `require` calls.
 
 It's also possible to use it with `watchify`
 
